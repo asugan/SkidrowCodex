@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background: url(/siteimg/skyrimbg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content-bg{
+    background: url(/siteimg/bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+    height: 5rem;
+    width: 8rem;
+    margin-left: 5rem;
+}
