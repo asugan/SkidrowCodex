@@ -34,32 +34,35 @@
 
 <body>
     <div class="bg">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 bg-transparent">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <img src="https://i.hizliresim.com/evwqmqk.png" alt="" class="logo">
-            </a>
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 bg-transparent">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <img src="https://i.hizliresim.com/evwqmqk.png" alt="" class="logo">
+                </a>
 
-            <ul class="nav nav-pills mt-auto mb-auto">
-                <li class="nav-item"><a href="#" class="nav-link active text-white" aria-current="page">Home</a>
-                </li>
-                <div class="dropdown ms-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Categories
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item"
-                                href="{{ route('category', ['categoryid' => 'Aksiyon']) }}">Aksiyon</a>
-                        </li>
-                        <li><a class="dropdown-item" href="{{ route('category', ['categoryid' => 'RPG']) }}">RPG</a>
-                        </li>
-                    </ul>
-                </div>
-                <li class="nav-item"><a href="#" class="nav-link text-white">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white">About</a></li>
-            </ul>
-        </header>
+                <ul class="nav nav-pills mt-auto mb-auto">
+                    <li class="nav-item"><a href="#" class="nav-link active text-white" aria-current="page">Home</a>
+                    </li>
+                    <div class="dropdown ms-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item"
+                                    href="{{ route('category', ['categoryid' => 'Aksiyon']) }}">Aksiyon</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="{{ route('category', ['categoryid' => 'RPG']) }}">RPG</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">About</a></li>
+                </ul>
+            </header>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="content-bg pt-5 pb-5">

@@ -16,12 +16,12 @@
 
     <div class="container">
         <div class="row">
-            @foreach ($posts as $post)
-                <div class="col-4 mt-5">
-                    <div class="row">
-                        <div class="col-12">
+            <div class="col-9">
+                <div class="row">
+                    @foreach ($posts as $post)
+                        <div class="col-6 mt-5">
                             <div class="d-flex justify-content-center">
-                                <div class="card" style="width: 18rem;">
+                                <div class="card" style="width: 18rem; min-height:30rem;">
                                     <a href="{{ route('postname', ['post' => $post->slug]) }}"><img
                                             src="{{ url('storage/' . $post->image1) }}" style="height:20rem;"
                                             class="card-img-top" alt="..."></a>
@@ -38,9 +38,22 @@
                                 </div>
                             </div>
                         </div>
+                    @endforeach
+                    <div class="d-flex justify-content-center mt-5">
+                        {!! $posts->links() !!}
                     </div>
                 </div>
-            @endforeach
+            </div>
+            <div class="col-3 mt-3">
+                <h3 class="text-white text-center">Recommended Games</h3>
+                @foreach ($postrecommended as $postr)
+                    <div class="col-12 mt-3">
+                        <a href="{{ route('postname', ['post' => $postr->slug]) }}"><img
+                                src="{{ url('storage/' . $postr->image1) }}" style="height:20rem;" class="card-img-top"
+                                alt="..."></a>
+                    </div>
+                @endforeach
+            </div>
         </div>
     </div>
 @endsection

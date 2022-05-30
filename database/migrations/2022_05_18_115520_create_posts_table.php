@@ -32,6 +32,7 @@ return new class extends Migration
             $table->string('image2')->nullable();
             $table->string('image3')->nullable();
             $table->text('t_link')->nullable();
+            $table->string('recommended')->nullable();
         });
     }
 

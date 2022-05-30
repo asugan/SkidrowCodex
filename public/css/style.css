@@ -9,7 +9,7 @@ body{
 }
 
 .content-bg{
-    background: url(/siteimg/bg.webp);
+    background: url(/siteimg/sitebg.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,5 +23,4 @@ body h2{
 .logo{
     height: 5rem;
     width: 8rem;
-    margin-left: 5rem;
 }

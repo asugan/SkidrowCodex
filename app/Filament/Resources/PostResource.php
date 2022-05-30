@@ -15,6 +15,7 @@ use App\Models\Post;
 use Filament\Forms\Components\Card;
 use Filament\Forms\Components\FileUpload;
 use Livewire\TemporaryUploadedFile;
+use Filament\Forms\Components\Toggle;
 
 class PostResource extends Resource
 {
@@ -70,6 +71,7 @@ class PostResource extends Resource
                 Forms\Components\TextInput::make('game_version')->required()->label('Oyun Versiyonu'),
                 Forms\Components\TextInput::make('steam_link')->required()->label('Steam Linki'),
                 Forms\Components\TextInput::make('dlcs')->required()->label('DLCler'),
+                Toggle::make('recommended'),
                 ]),
                 ])
             ]));

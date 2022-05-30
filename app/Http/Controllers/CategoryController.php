@@ -6,15 +6,15 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Comment;
 use App\Models\Post;
-use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
     public function index()
     {
-        $posts = Post::all();
+        $posts = Post::latest()->paginate(10);
+        $postrecommended = Post::where('recommended', '1')-> get();
 
-        return view('welcome', compact('posts'));
+        return view('index', compact('posts','postrecommended'));
     }
 
     public function show(Post $post,Comment $comment)
