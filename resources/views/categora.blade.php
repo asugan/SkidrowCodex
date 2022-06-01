@@ -22,7 +22,7 @@
                     <div class="container">
                         <div class="row">
                             @foreach ($post as $posts)
-                                <div class="col-4 mt-5">
+                                <div class="col-xl-4 col-md-6 col-sm-12 mt-5">
                                     <div class="row">
                                         <div class="d-flex justify-content-center">
                                             <div class="card" style="width: 18rem; min-height:30rem;">

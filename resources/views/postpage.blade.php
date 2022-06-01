@@ -11,40 +11,47 @@
 @section('content')
     <div class="container text-white">
         <div class="row">
-            <div class="col-12">
-                <h1 class="text-center mb-5">{{ $posts->post_name }}</h1>
-                <div class="d-flex justify-content-center">
-                    <img src="{{ url('storage/' . $posts->image1) }}" alt="{{ $posts->post_name }}"
-                        class="postimg">
+            <div class="border pt-5 pb-5">
+                <div class="col-12">
+                    <a href="{{ route('postname', ['post' => $posts->slug]) }}" class="text-decoration-none text-white">
+                        <h1 class="text-center mb-5">{{ $posts->post_name }}</h1>
+                    </a>
+                    <div class="d-flex justify-content-center">
+                        <img src="{{ url('storage/' . $posts->image1) }}" alt="{{ $posts->post_name }}"
+                            class="postimg">
+                    </div>
                 </div>
-            </div>
-            <div class="offset-1 col-10 offset-1 mt-3">
-                <h2>Game Details:</h2>
-                <h5>Title: {{ $posts->post_name }}</h5>
-                <h5>Genre: {{ $posts->category_name }}</h5>
-                <h5>Size: {{ $posts->size }}</h5>
-                <h5>DLC: {{ $posts->dlcs }}</h5>
-                <h5>Developer: {{ $posts->developer }}</h5>
-                <h5>Release Year: {{ $posts->release_year }}</h5>
-                <h5>Steam Link: <a href="{{ $posts->steam_link }}" target="_blank"><input type="text"
-                            placeholder="Go to Steam Link" class="bg-dark inputc ms-3"></a></h5>
-                <h5>Game Version: {{ $posts->game_version }}</h5>
-                <h5>Keywords: {{ $posts->keywords }}</h5>
-            </div>
-            <div class="offset-1 col-10 offset-1 mt-3">
-                <p>{!! html_entity_decode($posts->post_body) !!}</p>
-            </div>
-            <div class="col-12 text-center">
-                <h3>Torrent Links :</h3>
-                <a href="{{ $posts->t_link }}" target="_blank"><input type="text" placeholder="Click For Torrent Link -1"
-                        class="bg-dark inputc"></a>
-            </div>
-            <div class="col-12 text-center mt-4">
-                <h3>Screenshoots :</h3>
-                <img src="{{ url('storage/' . $posts->image2) }}" alt="{{ $posts->post_name }}"
-                    class="scsimg img-fluid mt-4">
-                <img src="{{ url('storage/' . $posts->image3) }}" alt="{{ $posts->post_name }}"
-                    class="scsimg img-fluid mt-5">
+                <div class="offset-1 col-10 offset-1 mt-3">
+                    <h2>Game Details:</h2>
+                    <h5>Title: {{ $posts->post_name }}</h5>
+                    <h5>Genre: {{ $posts->category_name }}</h5>
+                    <h5>Size: {{ $posts->size }}</h5>
+                    <h5>DLC: {{ $posts->dlcs }}</h5>
+                    <h5>Developer: {{ $posts->developer }}</h5>
+                    <h5>Release Year: {{ $posts->release_year }}</h5>
+                    <h5>Steam Link: <a href="{{ $posts->steam_link }}" target="_blank"><input type="text"
+                                placeholder="Go to Steam Link" class="bg-dark inputc ms-3"></a></h5>
+                    <h5>Game Version: {{ $posts->game_version }}</h5>
+                    <h5>Keywords: {{ $posts->keywords }}</h5>
+                </div>
+                <div class="offset-1 col-10 offset-1 mt-3">
+                    <h2>About The Game:</h2>
+                    <p>{!! html_entity_decode($posts->post_body) !!}</p>
+                </div>
+                <div class="col-12 text-center">
+                    <h3>Torrent Links :</h3>
+                    <a href="{{ $posts->t_link }}" target="_blank"><input type="text"
+                            placeholder="Click For Torrent Link -1" class="bg-dark inputc"></a>
+                </div>
+                @if ($posts->image2 and $posts->image3)
+                    <div class="col-12 text-center mt-4">
+                        <h3>Screenshoots :</h3>
+                        <img src="{{ url('storage/' . $posts->image2) }}" alt="{{ $posts->post_name }}"
+                            class="scsimg img-fluid mt-4">
+                        <img src="{{ url('storage/' . $posts->image3) }}" alt="{{ $posts->post_name }}"
+                            class="scsimg img-fluid mt-5">
+                    </div>
+                @endif
             </div>
         </div>
     </div>

@@ -41,7 +41,8 @@
                 </a>
 
                 <ul class="nav nav-pills mt-auto mb-auto">
-                    <li class="nav-item"><a href="#" class="nav-link active text-white" aria-current="page">Home</a>
+                    <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link active text-white"
+                            aria-current="page">Home</a>
                     </li>
                     <div class="dropdown ms-3">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"

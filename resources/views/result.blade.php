@@ -2,8 +2,11 @@
 @section('content')
     <div class="container">
         <div class="row">
+            <div class="col-12">
+                <h1 class="text-white text-center">Results : ({{ count($results) }})</h1>
+            </div>
             @forelse($results as $post)
-                <div class="col-4 mt-5">
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-5">
                     <div class="row">
                         <div class="col-12">
                             <div class="d-flex justify-content-center">
