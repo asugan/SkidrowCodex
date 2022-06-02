@@ -13,8 +13,9 @@ class CategoryController extends Controller
     {
         $posts = Post::latest()->paginate(10);
         $postrecommended = Post::where('recommended', '1')-> get();
+        $category = Category::all();
 
-        return view('index', compact('posts','postrecommended'));
+        return view('index', compact('posts','postrecommended','category'));
     }
 
     public function show(Post $post,Comment $comment)

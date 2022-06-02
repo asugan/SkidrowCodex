@@ -18,7 +18,8 @@
         <div class="row">
             <div class="col-12">
                 @forelse ($categoria as $category)
-                    <h1 class="text-center text-white">{{ $category->category_name }}</h1>
+                    <h1 class="text-center text-white">{{ $category->category_name }} ({{ count($category->post) }})
+                    </h1>
                     <div class="container">
                         <div class="row">
                             @foreach ($post as $posts)

@@ -16,7 +16,20 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-xl-9 col-sm-12">
+            <div class="col-xl-2">
+                <h3 class="text-white text-center">Categories</h3>
+                @foreach ($category as $categories)
+                    <ul class="list-group">
+                        <li class="list-group-item mt-3">
+                            <a href="{{ route('category', ['categoryid' => $categories->category_name]) }}"
+                                class="text-dark text-decoration-none">{{ $categories->category_name }}
+                                ({{ count($categories->post) }})
+                            </a>
+                        </li>
+                    </ul>
+                @endforeach
+            </div>
+            <div class="col-xl-7 col-sm-12">
                 <div class="row">
                     @foreach ($posts as $post)
                         <div class="col-md-6 col-sm-12 mt-5">
