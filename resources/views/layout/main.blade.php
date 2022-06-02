@@ -58,7 +58,7 @@
                             </li>
                         </ul>
                     </div>
-                    <li class="nav-item"><a href="{{ route('contact') }}"
+                    <li class="nav-item"><a href="{{ route('contactpage') }}"
                             class="nav-link text-white">Contact</a></li>
                     <li class="nav-item"><a href="{{ route('FAQ') }}" class="nav-link text-white">FAQs</a></li>
                     <li class="nav-item"><a href="{{ route('about') }}" class="nav-link text-white">About</a>
