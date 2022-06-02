@@ -16,7 +16,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-xl-9 col-md-12">
+            <div class="col-xl-9 col-sm-12">
                 <div class="row">
                     @foreach ($posts as $post)
                         <div class="col-md-6 col-sm-12 mt-5">
@@ -44,7 +44,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 recommended mt-3">
+            <div class="col-xl-3 recommended mt-3">
                 <h3 class="text-white text-center">Recommended Games</h3>
                 @foreach ($postrecommended as $postr)
                     <div class="col-12 mt-3">

@@ -99,7 +99,7 @@
                 </div>
                 <div class="col-xs-12">
                     <div class="d-flex justify-content-center">
-                        <button class="btn btn-dark mt-3 ps-5 pe-5" type="submit">Send Comment</button>
+                        <button class="btn submit-button mt-3 ps-5 pe-5" type="submit">Send Comment</button>
                     </div>
                 </div>
             </div>

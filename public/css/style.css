@@ -25,7 +25,35 @@ body h2{
     width: 8rem;
 }
 
-@media only screen and (max-width: 992px) {
+.nav1{
+    background-color: #312783 !important;
+}
+
+.nav1:hover{
+    background-color: #951B81 !important;
+}
+
+.drropdown{
+    background-color: #312783 !important;
+    border: none;
+}
+
+.drropdown:hover{
+    background-color: #951B81 !important;
+}
+
+.submit-button{
+    background-color: #312783 !important;
+    border: none;
+    color:white;
+}
+
+.submit-button:hover{
+    background-color: #951B81 !important;
+    color:white;
+}
+
+@media only screen and (max-width: 1200px) {
     .recommended{
         display: none;
     }

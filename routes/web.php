@@ -16,6 +16,9 @@ use App\Http\Controllers\SearchController;
 */
 
 Route::get('/',[App\Http\Controllers\CategoryController::class, 'index'])->name('welcome');
+Route::get('/about', function () {return view('about');})->name('about');
+Route::get('/FAQ', function () {return view('FAQ');})->name('FAQ');
+Route::get('/contact', function () {return view('contact');})->name('contact');
 Route::get('search',[App\Http\Controllers\SearchController::class, 'Search'])->name('search');
 Route::get('/category/{categoryid}',[App\Http\Controllers\CategoryController::class, 'catcat'])->name('category');
 Route::get('/{post}',[App\Http\Controllers\CategoryController::class, 'show'])->name('postname');
