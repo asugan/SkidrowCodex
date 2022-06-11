@@ -12,41 +12,39 @@ class CategoryController extends Controller
     public function index()
     {
         $posts = Post::latest()->paginate(10);
-        $postrecommended = Post::where('recommended', '1')-> get();
+        $postrecommended = Post::where('recommended', '1')->get();
         $category = Category::all();
 
-        return view('index', compact('posts','postrecommended','category'));
+        return view('index', compact('posts', 'postrecommended', 'category'));
     }
 
-    public function show(Post $post,Comment $comment)
+    public function show(Post $post, Comment $comment)
     {
         $comment->post_id = $post->id;
-        $comment = Comment::where('post_id',$comment->post_id) -> paginate(5);
+        $comment = Comment::where('post_id', $comment->post_id)->paginate(5);
 
-        return view('postpage',[
+        return view('postpage', [
             'posts' => $post,
-        ],compact('comment'));
+        ], compact('comment'));
     }
 
-    public function save_comment(Request $request,Post $post){
+    public function save_comment(Request $request, Post $post)
+    {
         $request->validate([
             'content' => 'required'
         ]);
-        $data=new Comment;
-        $data->post_id=$post->id;
-        $data->content=$request->content;
-        $data->name=$request->name;
+        $data = new Comment;
+        $data->post_id = $post->id;
+        $data->content = $request->content;
+        $data->name = $request->name;
         $data->save();
         return redirect()->back();
     }
 
-    public function catcat(Category $cat ,$categoryid)
+    public function catcat(Category $category)
     {
-        $categoria = Category::where('category_name', $categoryid)-> get();
+        $post = $category->post()->paginate(9);
 
-        $post = Post::where('category_name', $categoryid)
-                ->paginate(10);
-
-        return view('categora', compact('categoria','post'));
+        return view('categora')->with(['category' => $category, 'post' => $post]);
     }
 }

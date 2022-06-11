@@ -12,7 +12,7 @@ class Post extends Model
     use HasFactory;
     use Sluggable;
 
-    protected $fillable = ['post_name', 'post_body', 'category_id', 'category_name', 'image1', 'image2', 'image3', 't_link','keywords', 'developer', 'release_year', 'game_version' , 'size' ,'steam_link','dlcs','recommended'];
+    protected $guarded = [];
 
     public function sluggable(): array
     {
@@ -28,7 +28,8 @@ class Post extends Model
         return 'slug';
     }
 
-    public function comment(){
+    public function comment()
+    {
         return $this->hasMany(Comment::class);
     }
 

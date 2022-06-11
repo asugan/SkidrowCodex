@@ -6,14 +6,16 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="title" content="Skidrow and Codex Torrent">
-    <meta name="description" content="Skidrow and Codex Torrents">
-    <meta name="keywords" content="Torrent,Skidrow,Codex">
+    <meta name="title" content="@yield('title')">
+    <meta name="description" content="@yield('description')">
+    <meta name="keywords" content="@yield('keywords')">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Skidrow and Codex Torrent">
 
     <!-- Title  -->
-    <title>Skidrow and Codex</title>
+    <title>@yield('title')</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('siteimg/sclogo.png') }}" />
@@ -30,6 +32,7 @@
 
     <!-- Core Style Css -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/postpage.css') }}" />
 </head>
 
 <body>
@@ -51,10 +54,10 @@
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <li><a class="dropdown-item"
-                                    href="{{ route('category', ['categoryid' => 'Aksiyon']) }}">Aksiyon</a>
+                                    href="{{ route('category', ['category' => 'Aksiyon']) }}">Aksiyon</a>
                             </li>
                             <li><a class="dropdown-item"
-                                    href="{{ route('category', ['categoryid' => 'RPG']) }}">RPG</a>
+                                    href="{{ route('category', ['category' => 'RPG']) }}">RPG</a>
                             </li>
                         </ul>
                     </div>

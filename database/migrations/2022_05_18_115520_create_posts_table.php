@@ -21,6 +21,7 @@ return new class extends Migration
             $table->text('post_body')->nullable();
             $table->string('slug')->unique();
             $table->string('keywords')->nullable();
+            $table->text('seo_description')->nullable();
             $table->string('category_name')->nullable();
             $table->string('developer')->nullable();
             $table->string('release_year')->nullable();

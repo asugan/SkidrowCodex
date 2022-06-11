@@ -1,13 +1,7 @@
 @extends('layout.main')
-
-<head>
-    <meta name="title" content="{{ $posts->post_name }}">
-    <meta name="description" content="{{ $posts->keywords }}">
-    <meta name="keywords" content="{{ $posts->keywords }}">
-    <title>{{ $posts->post_name }}</title>
-    <!-- Core Style Css -->
-    <link rel="stylesheet" href="{{ asset('css/postpage.css') }}" />
-</head>
+@section('title', $posts->post_name)
+@section('description', Str::limit($posts->seo_description, 120, '...'))
+@section('keywords', $posts->keywords)
 @section('content')
     <div class="container text-white">
         <div class="row">

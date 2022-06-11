@@ -1,4 +1,11 @@
 @extends('layout.main')
+@section('title', 'Skidrow and Codex Torrent')
+@section('description',
+    'Skidrow and Codex Torrent- Download Games for PC with Torrent, Repacks, patches and updates,
+    Crack By SKIDROW, 3DM, RELOADED, CODEX, PROPHET, CPY',)
+@section('keywords',
+    'Skidrow,Codex,Torrent,PC Torrent,Repack,Skidrow Reloaded,Reloaded,Cpy,Skidrow Torrent,Reloaded
+    Torrent,Torrent Download,Skindrow and Codex Torrent',)
 @section('content')
     <div class="container">
         <div class="row">
@@ -18,16 +25,16 @@
         <div class="row">
             <div class="col-xl-2">
                 <h3 class="text-white text-center">Categories</h3>
-                @foreach ($category as $categories)
-                    <ul class="list-group">
-                        <li class="list-group-item mt-3">
-                            <a href="{{ route('category', ['categoryid' => $categories->category_name]) }}"
+                <ul class="list-group">
+                    @foreach ($category as $categories)
+                        <li class="list-group-item mt-3 text-center">
+                            <a href="{{ route('category', ['category' => $categories->category_name]) }}"
                                 class="text-dark text-decoration-none">{{ $categories->category_name }}
                                 ({{ count($categories->post) }})
                             </a>
                         </li>
-                    </ul>
-                @endforeach
+                    @endforeach
+                </ul>
             </div>
             <div class="col-xl-7 col-sm-12">
                 <div class="row">
@@ -39,7 +46,7 @@
                                             src="{{ url('storage/' . $post->image1) }}" style="height:20rem;"
                                             class="card-img-top" alt="..."></a>
                                     <div class="card-body">
-                                        <a href="{{ url('category', ['categoryid' => $post->category_name]) }}"
+                                        <a href="{{ url('category', ['category' => $post->category_name]) }}"
                                             class="text-decoration-none text-dark">
                                             <p class="card-text mt-1 mb-1">{{ $post->category_name }}</p>
                                         </a>

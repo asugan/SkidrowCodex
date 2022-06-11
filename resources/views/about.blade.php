@@ -1,4 +1,11 @@
 @extends('layout.main')
+@section('title', 'Skidrow and Codex Torrent')
+@section('description',
+    'Skidrow and Codex Torrent- Download Games for PC with Torrent, Repacks, patches and updates,
+    Crack By SKIDROW, 3DM, RELOADED, CODEX, PROPHET, CPY',)
+@section('keywords',
+    'Skidrow,Codex,Torrent,PC Torrent,Repack,Skidrow Reloaded,Reloaded,Cpy,Skidrow Torrent,Reloaded
+    Torrent,Torrent Download,Skindrow and Codex Torrent',)
 @section('content')
     <div class="container">
         <div class="row">
