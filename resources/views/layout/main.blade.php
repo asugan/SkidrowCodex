@@ -18,7 +18,7 @@
     <title>@yield('title')</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('siteimg/sclogo.png') }}" />
+    <link rel="shortcut icon" href="{{ asset('siteimg/SC2.png') }}" />
 
     <!-- Google Fonts -->
 
@@ -40,7 +40,7 @@
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4 bg-transparent">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    <img src="{{ asset('siteimg/sclogo.png') }}" alt="" class="logo">
+                    <img src="{{ asset('siteimg/SC2.png') }}" alt="" class="logo">
                 </a>
 
                 <ul class="nav nav-pills mt-auto mb-auto">

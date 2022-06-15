@@ -1,11 +1,9 @@
 @extends('layout.main')
 @section('title', 'Skidrow and Codex Torrent')
 @section('description',
-    'Skidrow and Codex Torrent- Download Games for PC with Torrent, Repacks, patches and updates,
-    Crack By SKIDROW, 3DM, RELOADED, CODEX, PROPHET, CPY',)
+    'Skidrow and Codex Torrent- Download Games for PC with Torrent, Repacks, patches and updates,Crack By SKIDROW, 3DM, RELOADED, CODEX, PROPHET, CPY',)
 @section('keywords',
-    'Skidrow,Codex,Torrent,PC Torrent,Repack,Skidrow Reloaded,Reloaded,Cpy,Skidrow Torrent,Reloaded
-    Torrent,Torrent Download,Skindrow and Codex Torrent',)
+    'Skidrow,Codex,Torrent,PC Torrent,Repack,Skidrow Reloaded,Reloaded,Cpy,Skidrow Torrent,Reloaded Torrent,Torrent Download,Skindrow and Codex Torrent',)
 @section('content')
     <div class="container">
         <div class="row">
@@ -15,7 +13,7 @@
                     We are a young and promising project, which is aimed at giving the opportunity to try the novelties of
                     the gaming industry for free.<br><br>
 
-                    Today right here on SkidrowGameReloaded.co, you can download games via torrent on your computer, and
+                    Today right here on SkidrowandCodex.com, you can download games via torrent on your computer, and
                     some 5-7 years ago you had to go to the disk store and leave a considerable amount. In addition, it
                     happened that, seeing the price, had to return home empty-handed. Then there were two ways out: to save
                     or look for a treasure disk from friends. Often he was at such acquaintances who live even further than
@@ -25,7 +23,7 @@
                     are downloaded very quickly.
                 </p>
                 <h1 class="mt-3">WHAT IS THIS SITE:</h1>
-                <p class="mt-3">SkidrowGameReloaded.co — this is a 100% up-to-date solution for demanding gamers.
+                <p class="mt-3">SkidrowandCodex.com — this is a 100% up-to-date solution for demanding gamers.
                     Let the web is still a
                     lot of places that allow you to download games for free torrent, but here the order reigns. We are
                     against blocking the site with unnecessary files, against things that are clearly not worthy of interest

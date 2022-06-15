@@ -2,9 +2,7 @@
 
 @section('title', $category->category_name)
 @section('description', $category->category_name)
-@section('keywords',
-    'Skidrow,Codex,Torrent,PC Torrent,Repack,Skidrow Reloaded,Reloaded,Cpy,Skidrow Torrent,Reloaded
-    Torrent,Torrent Download,Skindrow and Codex Torrent',)
+@section('keywords', 'Skidrow,Codex,Torrent,PC Torrent,Repack,Skidrow Reloaded,Reloaded,Cpy,Skidrow Torrent,Reloaded Torrent,Torrent Download,Skindrow and Codex Torrent',)
 
 @section('content')
     <div class="container">

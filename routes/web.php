@@ -16,6 +16,7 @@ use App\Http\Controllers\SearchController;
 */
 
 Route::get('/', [App\Http\Controllers\CategoryController::class, 'index'])->name('welcome');
+Route::get('sitemap.xml', [App\Http\Controllers\SitemapController::class, 'index']);
 Route::get('/about', function () {
     return view('about');
 })->name('about');

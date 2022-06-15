@@ -26,30 +26,30 @@ body h2{
 }
 
 .nav1{
-    background-color: #312783 !important;
+    background-color: #081035 !important;
 }
 
 .nav1:hover{
-    background-color: #951B81 !important;
+    background-color: #C850C0 !important;
 }
 
 .drropdown{
-    background-color: #312783 !important;
+    background-color: #081035 !important;
     border: none;
 }
 
 .drropdown:hover{
-    background-color: #951B81 !important;
+    background-color: #C850C0 !important;
 }
 
 .submit-button{
-    background-color: #312783 !important;
+    background-color: white !important;
     border: none;
-    color:white;
+    color:black;
 }
 
 .submit-button:hover{
-    background-color: #951B81 !important;
+    background-color: #C850C0 !important;
     color:white;
 }
 
