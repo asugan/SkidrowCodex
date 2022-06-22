@@ -2,7 +2,7 @@
 
 @section('title', $category->category_name)
 @section('description', $category->category_name)
-@section('keywords', 'Skidrow,Codex,Torrent,PC Torrent,Repack,Skidrow Reloaded,Reloaded,Cpy,Skidrow Torrent,Reloaded Torrent,Torrent Download,Skindrow and Codex Torrent',)
+@section('keywords', 'Skidrow,Codex,Torrent,PC Torrent,Repack,Skidrow Reloaded,Reloaded,Cpy,Skidrow Torrent,Reloaded Torrent,Torrent Download,Skidrow and Codex Torrent',)
 
 @section('content')
     <div class="container">
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                    {!! $post->links() !!}
+                    {{ $post->links() }}
                 </div>
             </div>
         </div>

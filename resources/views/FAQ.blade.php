@@ -1,7 +1,7 @@
 @extends('layout.main')
 @section('title', 'Skidrow and Codex Torrent')
-@section('description',  'Skidrow and Codex Torrent- Download Games for PC with Torrent, Repacks, patches and updates,Crack By SKIDROW, 3DM, RELOADED, CODEX, PROPHET, CPY',)
-@section('keywords',  'Skidrow,Codex,Torrent,PC Torrent,Repack,Skidrow Reloaded,Reloaded,Cpy,Skidrow Torrent,Reloaded Torrent,Torrent Download,Skindrow and Codex Torrent',)
+@section('description', 'Skidrow and Codex Torrent- Download Games for PC with Torrent, Repacks, patches and updates,Crack By SKIDROW, 3DM, RELOADED, CODEX, PROPHET, CPY',)
+@section('keywords', 'Skidrow,Codex,Torrent,PC Torrent,Repack,Skidrow Reloaded,Reloaded,Cpy,Skidrow Torrent,Reloaded Torrent,Torrent Download,Skidrow and Codex Torrent',)
 @section('content')
     <div class="container">
         <div class="row">
@@ -9,7 +9,8 @@
                 <h1>FAQ - FREQUENTLY ASKED QUESTIONS</h1>
                 <p class="mt-3">Here you can get answers to the most frequently asked questions (FAQ), we tried to
                     collect only important
-                    questions, tried to give an answer in an accessible form. This is not the final list of questions, it
+                    questions, tried to give an answer in an accessible form. This is not the final list of questions,
+                    it
                     will
                     be replenished as far as possible.</p>
                 <p>Q. Who are we, what is this site, what is it unique about?<br>

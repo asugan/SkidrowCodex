@@ -20,8 +20,7 @@
                         </a>
                     </a>
                     <div class="d-flex justify-content-center mt-3">
-                        <img src="{{ url('storage/' . $posts->image1) }}" alt="{{ $posts->post_name }}"
-                            class="postimg">
+                        <img src="{{ url('storage/' . $posts->image1) }}" alt="{{ $posts->post_name }}" class="postimg">
                     </div>
                 </div>
                 <div class="offset-1 col-10 offset-1 mt-3">
@@ -33,7 +32,8 @@
                     <h5>Developer: {{ $posts->developer }}</h5>
                     <h5>Release Year: {{ $posts->release_year }}</h5>
                     <h5>Steam Link: <a href="{{ $posts->steam_link }}" target="_blank"><input type="text"
-                                placeholder="Go to Steam Link" class="bg-dark inputc ms-3"></a></h5>
+                                placeholder="Go to Steam Link" class="bg-dark inputc ms-3"></a>
+                    </h5>
                     <h5>Game Version: {{ $posts->game_version }}</h5>
                     <h5>Keywords: {{ $posts->keywords }}</h5>
                 </div>
@@ -82,7 +82,7 @@
             @endforeach
             <div class="col-12 mt-4">
                 <div class="d-flex justify-content-center">
-                    {!! $comment->links() !!}
+                    {{ $comment->links() }}
                 </div>
             </div>
         </div>

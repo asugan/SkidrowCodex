@@ -65,6 +65,35 @@ body h2{
     color:white;
 }
 
+.post-button{
+    background-color: #FFCC70 !important;
+    border: none;
+    color:#C850C0 !important;
+}
+
+.post-button:hover{
+    background-color: #C850C0 !important;
+    color:white !important;
+}
+
+.sizebg{
+    background: #FFCC70;
+    color: #C850C0;
+    border-radius: 25px;
+}
+
+.categoryhover{
+    background: #FFCC70;
+    color: #C850C0;
+    border-radius: 25px;
+}
+
+.categoryhover:hover{
+    background:#C850C0 ;
+    color: white;
+    transition: 0.2s ease;
+}
+
 @media only screen and (max-width: 1200px) {
     .recommended{
         display: none;

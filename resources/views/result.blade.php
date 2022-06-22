@@ -1,8 +1,7 @@
 @extends('layout.main')
 @section('title', 'Skidrow and Codex Torrent')
 @section('description', 'Skidrow and Codex Torrent- Download Games for PC with Torrent, Repacks, patches and updates, Crack By SKIDROW, 3DM, RELOADED, CODEX, PROPHET, CPY',)
-@section('keywords',
-    'Skidrow,Codex,Torrent,PC Torrent,Repack,Skidrow Reloaded,Reloaded,Cpy,Skidrow Torrent,Reloaded Torrent,Torrent Download,Skindrow and Codex Torrent',)
+@section('keywords', 'Skidrow,Codex,Torrent,PC Torrent,Repack,Skidrow Reloaded,Reloaded,Cpy,Skidrow Torrent,Reloaded Torrent,Torrent Download,Skidrow and Codex Torrent',)
 @section('content')
     <div class="container">
         <div class="row">
@@ -20,11 +19,11 @@
                                             class="card-img-top" alt="..."></a>
                                     <div class="card-body">
                                         <a href="{{ url('category', ['categoryid' => $post->category_name]) }}"
-                                            class="text-decoration-none text-dark">
+                                           class="text-decoration-none text-dark">
                                             <p class="card-text mt-1 mb-1">{{ $post->category_name }}</p>
                                         </a>
                                         <a href="{{ route('postname', ['post' => $post->slug]) }}"
-                                            class="text-decoration-none text-dark">
+                                           class="text-decoration-none text-dark">
                                             <h2 class="card-title text-center">{{ $post->post_name }}</h2>
                                         </a>
                                     </div>
@@ -36,7 +35,8 @@
             @empty
                 <div class="d-flex justify-content-center align-items-center flex-column text-white">
                     <h1>Game Not Found !!!</h1>
-                    <img src="https://www.callcentrehelper.com/images/stories/2020/06/despair-at-failure-cartoon-760.png"
+                    <img
+                        src="https://www.callcentrehelper.com/images/stories/2020/06/despair-at-failure-cartoon-760.png"
                         alt="" class="img-fluid">
                 </div>
             @endforelse
