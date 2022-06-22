@@ -3,14 +3,23 @@
 @section('description', Str::limit($posts->seo_description, 120, '...'))
 @section('keywords', $posts->keywords)
 @section('content')
+    @if (session()->has('message'))
+        <div class=" col-12 alert alert-success text-center">
+            {{ session()->get('message') }}
+        </div>
+    @endif
     <div class="container text-white">
         <div class="row">
-            <div class="border pt-5 pb-5">
+            <div class="pt-3 pb-5">
                 <div class="col-12">
                     <a href="{{ route('postname', ['post' => $posts->slug]) }}" class="text-decoration-none text-white">
-                        <h1 class="text-center mb-5">{{ $posts->post_name }}</h1>
+                        <h1 class="text-center mb-3">{{ $posts->post_name }}</h1>
+                        <a class="text-decoration-none text-center text-white"
+                            href="{{ route('category', ['category' => $posts->category_name]) }}">
+                            <h2>Category : {{ $posts->category_name }}</h2>
+                        </a>
                     </a>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center mt-3">
                         <img src="{{ url('storage/' . $posts->image1) }}" alt="{{ $posts->post_name }}"
                             class="postimg">
                     </div>

@@ -38,7 +38,7 @@ class CategoryController extends Controller
         $data->content = $request->content;
         $data->name = $request->name;
         $data->save();
-        return redirect()->back();
+        return redirect()->back()->with('message', 'Message sent succesfully !!!');
     }
 
     public function catcat(Category $category)

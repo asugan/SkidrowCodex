@@ -36,7 +36,7 @@
 </head>
 
 <body>
-    <div class="bg">
+    <div class="navbg">
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4 bg-transparent">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
@@ -69,15 +69,14 @@
                 </ul>
             </header>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="content-bg pt-4 pb-3 mb-3">
-                    @yield('content')
-                </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="content-bg border pt-4 pb-3 mb-3">
+                @yield('content')
             </div>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

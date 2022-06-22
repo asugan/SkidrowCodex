@@ -11,7 +11,7 @@
                 <form action="{{ route('search') }}" method="get">
                     {{ csrf_field() }}
                     <input type="search" name="search" placeholder="Search a Game!" aria-describedby="button-addon1"
-                        class="form-control border-0 bg-light">
+                           class="form-control border-0 bg-light">
                     <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i
                             class="fa fa-search"></i></button>
                 </form>
@@ -35,11 +35,11 @@
                                                     class="card-img-top" alt="..."></a>
                                             <div class="card-body">
                                                 <a href="{{ url('category', ['categoryid' => $posts->category_name]) }}"
-                                                    class="text-decoration-none text-dark">
+                                                   class="text-decoration-none text-dark">
                                                     <p class="card-text mt-1 mb-1">{{ $posts->category_name }}</p>
                                                 </a>
                                                 <a href="{{ route('postname', ['post' => $posts->slug]) }}"
-                                                    class="text-decoration-none text-dark">
+                                                   class="text-decoration-none text-dark">
                                                     <h2 class="card-title text-center">{{ $posts->post_name }}
                                                     </h2>
                                                 </a>

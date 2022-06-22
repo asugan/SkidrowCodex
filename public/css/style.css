@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body{
-    background: url(/siteimg/skyrimbg.webp);
+    background: url(/siteimg/bg5.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbg{
+    background: url(/siteimg/sitebg.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,20 +34,24 @@ body h2{
 }
 
 .nav1{
-    background-color: #081035 !important;
+    background-color: #FFCC70 !important;
+    color: #C850C0 !important;
 }
 
 .nav1:hover{
     background-color: #C850C0 !important;
+    color: white !important;
 }
 
 .drropdown{
-    background-color: #081035 !important;
+    background-color: #FFCC70 !important;
     border: none;
+    color: #C850C0 !important;
 }
 
 .drropdown:hover{
     background-color: #C850C0 !important;
+    color: white !important;
 }
 
 .submit-button{
