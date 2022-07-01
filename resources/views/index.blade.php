@@ -1,7 +1,11 @@
 @extends('layout.main')
 @section('title', 'Skidrow and Codex Torrent')
-@section('description', 'Skidrow and Codex Torrent-Download Games for PC with Torrent, Repacks, patches and updates,Crack By SKIDROW, 3DM, RELOADED, CODEX, PROPHET, CPY',)
-@section('keywords', 'Skidrow,Codex,Torrent,PC Torrent,Repack,Skidrow Reloaded,Reloaded,Cpy,Skidrow,Torrent,Reloaded,Torrent,Torrent Download,Skidrow and Codex Torrent',)
+@section('description',
+    'Skidrow and Codex Torrent-Download Games for PC with Torrent, Repacks, patches and
+    updates,Crack By SKIDROW, 3DM, RELOADED, CODEX, PROPHET, CPY',)
+@section('keywords',
+    'Skidrow,Codex,Torrent,PC Torrent,Repack,Skidrow
+    Reloaded,Reloaded,Cpy,Skidrow,Torrent,Reloaded,Torrent,Torrent Download,Skidrow and Codex Torrent',)
 @section('content')
     <div class="container">
         <div class="row">
@@ -9,7 +13,7 @@
                 <form action="{{ route('search') }}" method="get">
                     {{ csrf_field() }}
                     <input type="search" name="search" placeholder="Search a Game!" aria-describedby="button-addon1"
-                           class="form-control border-0 bg-light">
+                        class="form-control border-0 bg-light">
                     <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i
                             class="fa fa-search"></i></button>
                 </form>
@@ -25,8 +29,8 @@
                     @foreach ($category as $categories)
                         <li class="list-group-item mt-3 text-center">
                             <a href="{{ route('category', ['category' => $categories->category_name]) }}"
-                               class="text-dark text-decoration-none">{{ $categories->category_name }}
-                                ({{ count($categories->post) }})
+                                class="text-dark text-decoration-none">{{ $categories->category_name }}
+                                ({{ $categories->post_count }})
                             </a>
                         </li>
                     @endforeach
@@ -41,7 +45,7 @@
                             </div>
                             <div class="d-flex justify-content-center align-items-center pb-3">
                                 <a href="{{ url('category', ['category' => $post->category_name]) }}"
-                                   class="text-decoration-none categoryhover">
+                                    class="text-decoration-none categoryhover">
                                     <div class="ps-4 pe-4 pt-2 pb-2">
                                         <h4 class="mt-auto mb-auto">{{ $post->category_name }}</h4>
                                     </div>
@@ -50,8 +54,7 @@
                             <div class="text-center">
                                 <a href="{{ route('postname', ['post' => $post->slug]) }}"><img
                                         src="{{ url('storage/' . $post->image1) }}"
-                                        style="width: 18rem; min-height: 25rem"
-                                        class="card-img-top" alt="..."></a>
+                                        style="width: 18rem; min-height: 25rem" class="card-img-top" alt="..."></a>
                             </div>
                             <div class="sizebg pt-1 pb-2 ps-3 pe-3 mt-4 mb-4">
                                 <p> {!! html_entity_decode($post->post_body) !!} </p>
@@ -63,6 +66,11 @@
                                 <div class="sizebg ps-3 pe-3 pt-2 pb-2 ms-3">
                                     <div>
                                         <p class="mt-auto mb-auto">{{ $post->size }}</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="sizebg ps-3 pe-3 pt-2 pb-2 ms-3">
+                                        <p class="mt-auto mb-auto">Comments: {{ $post->comment_count }}</p>
                                     </div>
                                 </div>
                             </div>

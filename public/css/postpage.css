@@ -18,6 +18,10 @@
     max-height: 40rem;
 }
 
+.postspan{
+    color: #C850C0;
+}
+
 /* Comment Alanı Css */
 
 .be-comment-block {
@@ -139,5 +143,5 @@
         padding-left: 5rem;
         padding-right: 5rem;
         cursor: pointer;
-    }    
+    }
 }
