@@ -45,7 +45,12 @@
                                             src="{{ url('storage/' . $posts->image1) }}"
                                             style="width: 18rem; min-height: 25rem" class="card-img-top" alt="..."></a>
                                 </div>
-                                <div class="sizebg pt-1 pb-2 ps-3 pe-3 mt-4 mb-4">
+                                <div class="d-flex justify-content-center align-items-center mt-3">
+                                    <div class="ps-4 pe-4 pt-2 pb-2 categoryhover">
+                                        <h5 class="mt-auto mb-auto">🗝️ {{ $posts->keywords }}</h5>
+                                    </div>
+                                </div>
+                                <div class="sizebg pt-1 pb-2 ps-3 pe-3 mt-3 mb-3">
                                     <p> {!! html_entity_decode($posts->post_body) !!} </p>
                                 </div>
                                 <div class="d-flex justify-content-center align-items-center pb-3">
