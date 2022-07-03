@@ -16,6 +16,7 @@ use Filament\Forms\Components\Card;
 use Filament\Forms\Components\FileUpload;
 use Livewire\TemporaryUploadedFile;
 use Filament\Forms\Components\Toggle;
+use Filament\Forms\Components\MarkdownEditor;
 
 class PostResource extends Resource
 {
@@ -29,7 +30,7 @@ class PostResource extends Resource
             ->schema(
                 Card::make()->columns(1)->schema([
                     Forms\Components\TextInput::make('post_name')->required()->label('Oyun Adı'),
-                    Forms\Components\RichEditor::make('post_body')->required()->label('İçerik'),
+                    MarkdownEditor::make('post_body')->required()->label('İçerik'),
                     Forms\Components\TextInput::make('t_link')->required()->label('Torrent Linki'),
                     Forms\Components\TextInput::make('keywords')->required()->label('Anahtar Kelimeler'),
                     Card::make()->columns(2)->schema([

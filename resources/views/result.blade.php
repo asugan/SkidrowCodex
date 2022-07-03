@@ -48,8 +48,8 @@
                             <h5 class="mt-auto mb-auto">🗝️ {{ $posts->keywords }}</h5>
                         </div>
                     </div>
-                    <div class="sizebg pt-1 pb-2 ps-3 pe-3 mt-3 mb-3">
-                        <p> {!! html_entity_decode($posts->post_body) !!} </p>
+                    <div class="sizebg pt-3 pb-2 ps-3 pe-3 mt-3 mb-3">
+                        <p> {{ $posts->seo_description }} </p>
                     </div>
                     <div class="d-flex justify-content-center align-items-center pb-3">
                         <div>

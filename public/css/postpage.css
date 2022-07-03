@@ -22,6 +22,11 @@
     color: #C850C0;
 }
 
+.inputc::placeholder{
+    color: #C850C0 !important;
+    opacity: 1;
+}
+
 /* Comment Alanı Css */
 
 .be-comment-block {
